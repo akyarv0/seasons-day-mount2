@@ -97,28 +97,45 @@
 // Textbox tan alınan 500 500₺den büyük fiyatlar için%10 indirim uygulayuygulayanprogramı yapınız.
 //? İF ÇÖZÜM 1
 
-let price = +prompt("Lütfen alışveriş miktarını giriniz: ");
-if(price >= 500) {
- price=price-(price*0.1);
- alert(`Ödeyeceğiniz tutar ${price} TL'dir. Yüzde 10 indirim kazandınız.`);
-}
-else {
-  price-=(price*0.05)
-  alert(`Ödeyeceğiniz tutar ${price} TL'dir.`)
-}
-// ? TERNARY ÇÖZÜM 2
-price>500 ? console.log(`Yüzde 10 indirim kazandınız. Ödeyeceğiniz tutar= ${price-=price*0.1} TL`) : console.log("indirim kazanamadınız");
+// let price = +prompt("Lütfen alışveriş miktarını giriniz: ");
+// if(price >= 500) {
+//  price=price-(price*0.1);
+//  alert(`Ödeyeceğiniz tutar ${price} TL'dir. Yüzde 10 indirim kazandınız.`);
+// }
+// else {
+//   price-=(price*0.05)
+//   alert(`Ödeyeceğiniz tutar ${price} TL'dir.`)
+// }
+// // ? TERNARY ÇÖZÜM 2
+// price>500 ? console.log(`Yüzde 10 indirim kazandınız. Ödeyeceğiniz tutar= ${price-=price*0.1} TL`) : console.log("indirim kazanamadınız");
 
-// ? SWİTCH CASE ÇÖZÜM 3
-switch(price){
-  case  (price>=1500) :
-     console.log(`New ${price-=price*0.15} TL'dir`);
-    break;
-  case (price>=1000):
-    console.log(`New ${price-=price*0.10} TL'dir`);
-    break;
+// // ? SWİTCH CASE ÇÖZÜM 3
+// switch(price){
+//   case  (price>=1500) :
+//      console.log(`New ${price-=price*0.15} TL'dir`);
+//     break;
+//   case (price>=1000):
+//     console.log(`New ${price-=price*0.10} TL'dir`);
+//     break;
 
-  default:
-  console.log(`New price ${price-=price*0.05} TL'dir`);
+//   default:
+//   console.log(`New price ${price-=price*0.05} TL'dir`);
 
+// }
+
+
+function sayi() {
+  let sayi =+prompt("Bir sayı giriniz.");
+  if(sayi%2===0 || sayi%3===0 ){
+    console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
+    }
+    else if(sayi%5===0){
+      console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
+
+    }
+  else{
+    console.log(`Girilen ${sayi} sayısı asal sayıdır.`);
+  }
 }
+sayi()
+
