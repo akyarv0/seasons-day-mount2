@@ -122,20 +122,65 @@
 //   console.log(`New price ${price-=price*0.05} TL'dir`);
 
 // }
+//!ASAL SAYI ÖRNEĞİ 
 
+// function sayi() {
+//   let sayi =+prompt("Bir sayı giriniz.");
+//   if(sayi%2===0 || sayi%3===0 ){
+//     console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
+//     }
+//     else if(sayi%5===0){
+//       console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
 
-function sayi() {
-  let sayi =+prompt("Bir sayı giriniz.");
-  if(sayi%2===0 || sayi%3===0 ){
-    console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
+//     }
+//   else{
+//     console.log(`Girilen ${sayi} sayısı asal sayıdır.`);
+//   }
+// }
+// sayi()
+//? chatgpt çözümü
+// function sayi() {
+//   let sayi = parseInt(prompt("Bir sayı giriniz."), 10);
+//   if (sayi <= 1) {
+//     console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
+//   } else {
+//     let isPrime = true;
+//     for (let i = 2; i <= Math.sqrt(sayi); i++) {
+//       if (sayi % i === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) {
+//       console.log(`Girilen ${sayi} sayısı asal sayıdır.`);
+//     } else {
+//       console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
+//     }
+//   }
+// }
+// sayi();
+
+function reverseWordsWithoutArray(sentence) {
+    let reversed = "";
+    let wordEnd = sentence.length;
+    let i = sentence.length - 1;
+
+    while (i >= 0) {
+        if (sentence[i] === ' ' || i === 0) {
+            let wordStart = i === 0 ? 0 : i + 1;
+            reversed += sentence.substring(wordStart, wordEnd) + (i === 0 ? '' : ' ');
+            wordEnd = i;
+        }
+        i--;
     }
-    else if(sayi%5===0){
-      console.log(`Girilen ${sayi} sayısı asal sayı değildir.`);
-
-    }
-  else{
-    console.log(`Girilen ${sayi} sayısı asal sayıdır.`);
-  }
+    
+    return reversed.trim();
 }
-sayi()
+let inputSentence = "Merhaba Codeium kullanıcıları";
+let reversedSentence = reverseWordsWithoutArray(inputSentence);
+console.log(reversedSentence); // Çıktı: "kullanıcıları Codeium Merhaba"
 
+// function reverseWordsWithoutArray(sentence) {
+//   const reversedSentence = sentence.split(' ').reverse().join(' ')
+//   return reversedSentence
+// }
