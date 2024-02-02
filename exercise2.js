@@ -44,8 +44,7 @@
 
 // let year = Number(prompt("Yıl giriniz:"));
 
-// if (!isNaN(year)) {  // This checks if 'year' is a number
-  // Directly use the condition to determine the message for the alert
+// if (!isNaN(year)) {
 //   (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
 //     ? alert(`${year} is a leap year.`)
 //     : alert(`${year} is not a leap year.`);
@@ -70,14 +69,14 @@
 
 // }
 // **** do while örnek***(birden yirmiye kadar tek sayıların toplamı)***//
-// let sayi = 1;
+// let sayi = 0;
 // let toplam = 0;
 
 // do {
 //   toplam += sayi;
 
 //   sayi+=2;
-// } while (sayi <= 20);
+// } while (sayi <= 5);
 // console.log(toplam);
 
 // sayHi();
@@ -87,10 +86,11 @@
 
 // sayHi();
 
-// (function trian(num) {
+// function trian(num) {
 //   if (num === 1) return 1;
 //   return num + trian(num-1);
-// })(3);
+// }
+// trian(num)
 //! ******CONDİTİONS ÖRNEKLER ******//
 //? İF, ELSE AND SWİTCH CASE //
 // Bir
@@ -119,7 +119,7 @@
 //     break;
 
 //   default:
-//   console.log(`New price ${price-=price*0.05} TL'dir`);
+//   console.log(`New price ${price-=price*0.05} TL'dir`);//herkese yüzde 5 indirim yapılıyor.
 
 // }
 //!ASAL SAYI ÖRNEĞİ
@@ -176,49 +176,11 @@
 
 //     return reversed.trim();
 // }
-// let inputSentence = "Merhaba Codeium kullanıcıları";
-// let reversedSentence = reverseWordsWithoutArray(inputSentence);
-// console.log(reversedSentence); // Çıktı: "kullanıcıları Codeium Merhaba"
+let inputSentence = "Merhaba Codeium kullanıcıları";
+let reversedSentence = reverseWordsWithoutArray(inputSentence);
+console.log(reversedSentence); // Çıktı: "kullanıcıları Codeium Merhaba"
 
-// function reverseWordsWithoutArray(sentence) {
-//   const reversedSentence = sentence.split(' ').reverse().join(' ')
-//   return reversedSentence
-// }
-
-//? *****İN CLASS FUNCTİONS 31.01.2024****//
-
-selamla();
-//!hoisted function
-function selamla() {
-  console.log("Selam");
+function reverseWordsWithoutArray(sentence) {
+  const reversedSentence = sentence.split(' ').reverse().join(' ')
+  return reversedSentence
 }
-selamla();
-//!parametreli function: selamVer(selam,kişi) içerisindeki parametreleri function içine yazılır.
-function selamVer(selam, kisi) {
-  console.log(`${kisi} ${selam} `);
-}
-// selamVer("Ahmet", "Günaydın");
-
-function carp(num1, num2) {
-  // console.log(num1*num2)
-  // return num1*num2 olması gereken yazım bu
-  const result = num1 * num2;
-  return result;
-}
-// const sonuc = carp(3,6)
-// console.log(sonuc);//burada sonuc undefined çıkr çünkü function içinde return edilmedi.
-
-carp(2 * 5); // result içerde return edildi çalışır.
-
-//? **** FUNCTİON EXPRESSİON****//
-
-const yazdir = function (msg) {
-  msg = prompt("isminiz");
-  console.log(`  SELAM ${msg} `);
-};
-// yazdir();
-const usAl = function(taban,us){
-    return taban**us
-}
-const us = usAl(3,4)
-console.log(us);
