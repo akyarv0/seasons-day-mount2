@@ -45,7 +45,7 @@
 // let year = Number(prompt("Yıl giriniz:"));
 
 // if (!isNaN(year)) {  // This checks if 'year' is a number
-//   // Directly use the condition to determine the message for the alert
+  // Directly use the condition to determine the message for the alert
 //   (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0
 //     ? alert(`${year} is a leap year.`)
 //     : alert(`${year} is not a leap year.`);
@@ -106,10 +106,10 @@
 //   price-=(price*0.05)
 //   alert(`Ödeyeceğiniz tutar ${price} TL'dir.`)
 // }
-// // ? TERNARY ÇÖZÜM 2
+// ? TERNARY ÇÖZÜM 2
 // price>500 ? console.log(`Yüzde 10 indirim kazandınız. Ödeyeceğiniz tutar= ${price-=price*0.1} TL`) : console.log("indirim kazanamadınız");
 
-// // ? SWİTCH CASE ÇÖZÜM 3
+// ? SWİTCH CASE ÇÖZÜM 3
 // switch(price){
 //   case  (price>=1500) :
 //      console.log(`New ${price-=price*0.15} TL'dir`);
