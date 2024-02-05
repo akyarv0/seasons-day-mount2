@@ -1,3 +1,15 @@
 *{
     display: flexbox;
+    
+}
+
+.container{
+    display: flex;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    width: 9rem;
+    height: 9rem;
+}
+.yazi{
+    color: white;
+    
 }

@@ -160,27 +160,27 @@
 // }
 // sayi();
 
-// function reverseWordsWithoutArray(sentence) {
-//     let reversed = "";
-//     let wordEnd = sentence.length;
-//     let i = sentence.length - 1;
-
-//     while (i >= 0) {
-//         if (sentence[i] === ' ' || i === 0) {
-//             let wordStart = i === 0 ? 0 : i + 1;
-//             reversed += sentence.substring(wordStart, wordEnd) + (i === 0 ? '' : ' ');
-//             wordEnd = i;
-//         }
-//         i--;
-//     }
-
-//     return reversed.trim();
-// }
-let inputSentence = "Merhaba Codeium kullanıcıları";
-let reversedSentence = reverseWordsWithoutArray(inputSentence);
-console.log(reversedSentence); // Çıktı: "kullanıcıları Codeium Merhaba"
-
 function reverseWordsWithoutArray(sentence) {
-  const reversedSentence = sentence.split(' ').reverse().join(' ')
-  return reversedSentence
+    let reversed = "";
+    let wordEnd = sentence.length;
+    let i = sentence.length - 1;
+
+    while (i >= 0) {
+        if (sentence[i] === ' ' || i === 0) {
+            let wordStart = i === 0 ? 0 : i + 1;
+            reversed += sentence.substring(wordStart, wordEnd) + (i === 0 ? '' : ' ');
+            wordEnd = i;
+        }
+        i--;
+    }
+
+    return reversed.trim();
 }
+// let inputSentence = "Merhaba Codeium kullanıcıları";
+// let reversedSentence = reverseWordsWithoutArray(inputSentence);
+// console.log(reversedSentence); // Çıktı: "kullanıcıları Codeium Merhaba"
+
+// function reverseWordsWithoutArray(sentence) {
+//   const reversedSentence = sentence.split(' ').reverse().join(' ')
+//   return reversedSentence
+// }
