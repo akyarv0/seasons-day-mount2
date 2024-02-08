@@ -160,21 +160,21 @@
 // }
 // sayi();
 
-function reverseWordsWithoutArray(sentence) {
-    let reversed = "";
-    let wordEnd = sentence.length;
-    let i = sentence.length - 1;
+// function reverseWordsWithoutArray(sentence) {
+//     let reversed = "";
+//     let wordEnd = sentence.length;
+//     let i = sentence.length - 1;
 
-    while (i >= 0) {
-        if (sentence[i] === ' ' || i === 0) {
-            let wordStart = i === 0 ? 0 : i + 1;
-            reversed += sentence.substring(wordStart, wordEnd) + (i === 0 ? '' : ' ');
-            wordEnd = i;
-        }
-        i--;
-    }
+//     while (i >= 0) {
+//         if (sentence[i] === ' ' || i === 0) {
+//             let wordStart = i === 0 ? 0 : i + 1;
+//             reversed += sentence.substring(wordStart, wordEnd) + (i === 0 ? '' : ' ');
+//             wordEnd = i;
+//         }
+//         i--;
+//     }
 
-    return reversed.trim();
+//     return reversed.trim();
 }
 // let inputSentence = "Merhaba Codeium kullanıcıları";
 // let reversedSentence = reverseWordsWithoutArray(inputSentence);
