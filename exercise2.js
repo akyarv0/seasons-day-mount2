@@ -175,7 +175,7 @@
 //     }
 
 //     return reversed.trim();
-}
+// }
 // let inputSentence = "Merhaba Codeium kullanıcıları";
 // let reversedSentence = reverseWordsWithoutArray(inputSentence);
 // console.log(reversedSentence); // Çıktı: "kullanıcıları Codeium Merhaba"
@@ -184,3 +184,70 @@
 //   const reversedSentence = sentence.split(' ').reverse().join(' ')
 //   return reversedSentence
 // }
+
+
+// Pratik 1 - Kullanıcıdan bir sayı isteyelim. Bu sayının tek mi çift mi olduğunu console'da yazdıralım.
+//! if ,else
+// let sayi = +prompt("Bir sayi giriniz");
+// if(sayi%2 === 0){
+//     console.log(`Girdiğiniz sayı ${sayi} çifttir!`)
+
+// }
+// else{
+//     console.log(`girdiğiniz sayi ${sayi} tektir.` )
+// }
+// //! Ternary yazımı
+// sayi%2===0 ? alert("girdiğiniz sayi çifttir!") : alert("girdiğiniz sayı tektir.")
+
+// Pratik 2 - Kullanıcıdan 1 ile 7 arasında bir sayı girmesini isteyelim. Kullanıcı farklı bir sayı girerse 1-7 arasında sayı girmesi gerektiği hatırlatıp yeniden sayı girmesini isteyelim. 1-7 arasında sayı girildiğinde ise haftanın kaçıncı gününe denk geliyorsa bunu console'da yazdıralım. (1- Pazartesi, 7- Pazar)
+
+// if (!(gun>=1 && gun<=7) ){
+//     alert("yanlış sayi girdiniz")
+//     }
+// else if (gun===1){
+//     console.log("1.gün pazartesidir.")
+
+// }   
+// else if (gun===2){
+//     console.log("2.gün salıdır.")
+
+// }   else if (gun===3){
+//     console.log("3.gün çarşamba.")
+
+// }   else if (gun===4){
+//     console.log("4.gün perşembe.")
+
+// }   else if (gun===5){
+//     console.log("5.gün cuma")
+
+// }   else if (gun===6){
+//     console.log("6.gün cumartesi.")
+
+// }   else if (gun===7) {
+//     console.log("7.gün pazardır.")
+
+// }   
+
+let gun = +prompt("1 ile 7 arasında bir sayı giriniz")
+
+switch(gun){
+    case (gun===1):
+        console.log("1.gün pazartesidir.");
+        break;
+    case(gun===2):
+    console.log("2.gün salıdır.")
+    break;
+default:
+    console.log("girdiğiniz sayı 1 ile 7 arasında olmalıdır.")
+
+   }
+   
+
+
+
+
+
+
+
+
+
