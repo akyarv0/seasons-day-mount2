@@ -259,8 +259,18 @@
 // console.log(`Uçak biletlerinden elde edilen gelir : ${toplam} TL`);
 
 
+let str = "Hello world"
+console.log((str.split("")));
 
 
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+// Using reduce() to find the sum
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log(sum); // Output: 15
 
 
 

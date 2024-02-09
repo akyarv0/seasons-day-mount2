@@ -39,24 +39,24 @@
 // }
 // const us = usAl(3,4)
 // console.log(us);
-const ogrenciler = ["ahmet", "mehmet", "ismet", "saffet", "ahmet", "saffet"]
-function ogrenciAra(ogrenciAdi) {
-    let sayac = 0;
-    for (let ogrenci of ogrenciler) {
-        if (ogrenci === ogrenciAdi) {
-            sayac++;
-        }
-    }
-    if (sayac === 0) {
-        return "öğrenci bulunamadı";
-    } else {
-        return ogrenciAdi + " isimli öğrenciden " + sayac + " adet bulunmaktadır.";
-    }
-}
-console.log(ogrenciAra("kemal"));//öğrenci bulunamadı exercise.js:57
+// const ogrenciler = ["ahmet", "mehmet", "ismet", "saffet", "ahmet", "saffet"]
+// function ogrenciAra(ogrenciAdi) {
+//     let sayac = 0;
+//     for (let ogrenci of ogrenciler) {
+//         if (ogrenci === ogrenciAdi) {
+//             sayac++;
+//         }
+//     }
+//     if (sayac === 0) {
+//         return "öğrenci bulunamadı";
+//     } else {
+//         return ogrenciAdi + " isimli öğrenciden " + sayac + " adet bulunmaktadır.";
+//     }
+// }
+// console.log(ogrenciAra("kemal"));//öğrenci bulunamadı exercise.js:57
 
-console.log(ogrenciAra("Ahmet"));// öğrenci bulunamadı.
-console.log(ogrenciAra("ahmet"));// ahmet isimli öğrenciden 2 adet bulunmaktadır.
+// console.log(ogrenciAra("Ahmet"));// öğrenci bulunamadı.
+// console.log(ogrenciAra("ahmet"));// ahmet isimli öğrenciden 2 adet bulunmaktadır.
 
 
 // function hesaplaBiletFiyati(toplamKoltukSayisi, satisaCikanKoltukSayisi, baslangicFiyati, zamOrani) {
