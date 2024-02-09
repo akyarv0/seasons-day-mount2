@@ -242,21 +242,21 @@
 
 //    }
    
-const bilet = 120
-let sum = 0
-let fiyat = 1000
-for(i=1; i<=bilet; i++){
-    if(i<61){
-        sum += fiyat
-        console.log(i, fiyat);
-    } else {
-        fiyat = fiyat * 1.01
-        console.log(i, Math.round(fiyat));
-        sum += fiyat
-    }
-}
-const toplam = Math.round(sum)
-console.log(`Uçak biletlerinden elde edilen gelir : ${toplam} TL`);
+// const bilet = 120
+// let sum = 0
+// let fiyat = 1000
+// for(i=1; i<=bilet; i++){
+//     if(i<61){
+//         sum += fiyat
+//         console.log(i, fiyat);
+//     } else {
+//         fiyat = fiyat * 1.01
+//         console.log(i, Math.round(fiyat));
+//         sum += fiyat
+//     }
+// }
+// const toplam = Math.round(sum)
+// console.log(`Uçak biletlerinden elde edilen gelir : ${toplam} TL`);
 
 
 
